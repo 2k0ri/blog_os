@@ -20,7 +20,9 @@ RUN apt-get update \
     #
     # Install Rust components
     && rustup update \
-    && rustup component add rls rust-analysis rust-src \
+    && rustup component add rls rust-analysis rust-src llvm-tools-preview \
+    && cargo install cargo-xbuild \
+    && cargo install bootimage --version "^0.7.3" \
     #
     # Clean up
     && apt-get autoremove -y \

@@ -7,6 +7,7 @@ authors = ["2k0ri <esc13245@gmail.com>"]
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+bootloader = "0.6.4"
 
 # the profile used for `cargo build`
 [profile.dev]
